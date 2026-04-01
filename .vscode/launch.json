@@ -23,6 +23,7 @@
         }
     ],
     "preLaunchTask": "C/C++: g++.exe build active file",
+    "configuration": "C/C++: g++ exe build and debug active file",
     "configurations": [
         {
             "name": "C/C++: g++.exe build and debug active file",
@@ -70,7 +71,7 @@
             ]
         },
         {
-            "name": "C/C++: gcc.exe build and debug active file",
+            "name": "C/C++: gcc.exe",
             "type": "cppdbg",
             "request": "launch",
             "program": "${fileDirname}\\${fileBasenameNoExtension}.exe",
@@ -93,7 +94,7 @@
                     "ignoreFailures": true
                 }
             ],
-            "preLaunchTask": "C/C++: gcc.exe build active file"
+            "preLaunchTask": "C/C++: gcc.exe"
         }
     ],
     "version": "2.0.0"
