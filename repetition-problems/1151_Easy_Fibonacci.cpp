@@ -8,27 +8,21 @@ int main()
     if (n > 0 && n < 46)
     {
         int first = 0, second = 1, next;
-
-        for (int i = 0; i < n; i++)
+        
+        if (n == 1)
+            cout << first;
+        else if (n >= 2)
         {
-            if (i == 0)
-            {
-                cout << first;
-            }
-            else if (i == 1)
-            {
-                cout << " " << second;
-            }
-            else
+            cout << first << " " << second;
+            
+            for (int i = 2; i < n; i++)
             {
                 next = first + second;
-
                 cout << " " << next;
                 first = second;
                 second = next;
             }
         }
     }
-
     return 0;
 }
